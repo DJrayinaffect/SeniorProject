@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book DJ Rayvon for your event. Fill out the inquiry form and get a response within 24 hours." />
+  <title>Book Now | DJ Rayvon</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">DJ <span>RAYVON</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Book DJ Rayvon</h1>
+      <p>Let's make your event unforgettable.</p>
+    </div>
+  </section>
+
+  <section class="section contact-section">
+    <div class="container contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-wrapper">
+        <h2>Send an Inquiry</h2>
+        <p class="form-note">All fields marked <span class="req">*</span> are required. You'll receive a response within 24 hours.</p>
+
+        <div class="success-message" id="successMsg" style="display:none;">
+          ✅ Thank you! Your inquiry has been received. DJ Rayvon will be in touch within 24 hours.
+        </div>
+
+        <form id="bookingForm" action="https://formspree.io/f/demo" method="POST" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name <span class="req">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" autocomplete="name" />
+            <span class="field-error" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span class="req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email" />
+            <span class="field-error" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="eventDate">Event Date <span class="req">*</span></label>
+            <input type="date" id="eventDate" name="eventDate" />
+            <span class="field-error" id="dateError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="eventType">Event Type <span class="req">*</span></label>
+            <select id="eventType" name="eventType">
+              <option value="">— Select an event type —</option>
+              <option value="wedding">Wedding</option>
+              <option value="corporate">Corporate Event</option>
+              <option value="birthday">Birthday Party</option>
+              <option value="club">Club / Nightlife</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="field-error" id="typeError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message / Details <span class="req">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your event — venue, guest count, music preferences, etc."></textarea>
+            <span class="field-error" id="msgError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send Inquiry</button>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <h2>Contact Info</h2>
+        <ul class="info-list">
+          <li><strong>📧 Email:</strong> bookings@djrayvon.com</li>
+          <li><strong>📍 Location:</strong> Los Angeles, CA</li>
+          <li><strong>⏱ Response Time:</strong> Within 24 hours</li>
+        </ul>
+        <h3>Follow &amp; Listen</h3>
+        <div class="social-links">
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn">Instagram</a>
+          <a href="https://soundcloud.com" target="_blank" rel="noopener" class="social-btn">SoundCloud</a>
+          <a href="https://open.spotify.com" target="_blank" rel="noopener" class="social-btn">Spotify</a>
+        </div>
+        <div class="contact-note">
+          <p>Typical availability: Fridays, Saturdays, and Sundays. Weekday events considered on request.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">DJ <span>RAYVON</span></p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://soundcloud.com" target="_blank" rel="noopener">SoundCloud</a>
+        <a href="https://open.spotify.com" target="_blank" rel="noopener">Spotify</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 DJ Rayvon. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
